@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Best practice to use tag in table like this -->
+    <table>
+        <!-- <caption>My Savings</caption>
+        <thead>
+            <tr>
+                <th>Months</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Feburary</td>
+                <td>100</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>March</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>800</td>
+            </tr>
+        </tfoot> -->
+
+        <!-- <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            
+            <td>Maximum</td>
+            <td>Minimum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>1126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr> -->
+<!-- colgroup tag :this tag used in specific columns for styling .this tag is use <col tag> to apply the styling to which column, it also use span attribute which specify the column.
+This tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.  -->
+    <colgroup>
+        <!-- span="" : default value is col 1 -->
+        <!-- <col span="" style="background-color: aqua;"> -->
+        <!-- first three column will be colored -->
+        <!-- <col span="3" style="background-color: blanchedalmond;"> -->
+        <col span="2" style="background-color: aqua;">
+        <!-- <col span="1" > -->
+        <col span="2" style="background-color:chartreuse;">
+        <!-- column collapse  -->
+        <col span="1" style="background-color: aqua; visibility: collapse;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
+            <th>Col 4</th>
+            <th>Col 5</th>
+        </tr>
+    </thead>
+   <tbody>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+   </tbody>
+
+    </table>
+</body>
+</html>

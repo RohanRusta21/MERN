@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricky Table</title>
+    <style>
+        table,tr,td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!-- rowspan :-attribute specifies the number of rows a cell should span.
+                rowspan="0" tells the browser to span the cell to the last row of the table section (thead, tbody, or tfoot) -->
+            <th rowspan="3">
+                Day
+            </th>
+            <!-- colspan:-To make a cell span over multiple columns -->
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 a.m.</td>
+            <td>Introduction to html</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <!-- <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="2">XPath</td>
+          
+        </tr>
+        <tr>
+            <td rowspan="2">11:00 a.m.</td>
+            <td rowspan="2">2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL transformations</td>
+        </tr>
+        <tr>
+            <td>2:00 a.m.</td>
+            <td>5:00 p.m.</td>
+           
+        </tr> -->
+
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>5:00 p.m</td>
+            <td rowspan="2" style="padding: 7px;">XPath</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:00 a.m</td>
+            <td rowspan="2">2:00 p.m</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </tbody>
+        
+       
+    </table>
+    
+</body>
+</html>
