@@ -7,15 +7,27 @@
     <title>
         First Web Page
     </title>
+    <style>
+       html {
+             scroll-behavior: smooth;
+            }
+    </style>
 </head>
 <body>
     <h1>Linus Torvalds</h1>
     <p>The Creator of Linux</p>
+    <!-- Bookmark 1. create an id 2. add alink to it -->
+    <a href="#res">Resources</a><br>
     <img src="Linus_Bhaya.jpeg" alt="Linus Image">
     <figcaption>A Photography of Linus Torvalds</figcaption>
-    <h2><b>Biography</b></h2>
+    <!-- Section element -->
+    <section>
+        <h2><b>Biography</b></h2>
     <p>Linus Torvalds is a Finnish-American software engineer who is the creator and principal developer of the Linux kernel, which is the kernel for a number of operating systems. He also created the version control system Git. Torvalds was born on December 28, 1969 in Helsinki, Finland. He studied computer science at the University of Helsinki, and he developed the Linux kernel as a student project in 1991. Since then, the Linux kernel has become one of the most widely used kernels in the world, powering everything from smartphones to supercomputers.</p>
-    <h2><b>Achievements</b></h2>
+    </section>
+    
+    <section>
+        <h2><b>Achievements</b></h2>
     <ul>
         <li><strong>1991</strong> - Created the Linux kernel and the version control system Git</li>
         <li><strong>2004</strong> - Named one of the "100 Most Influential People in the World" by Time magazine in 2004</li>
@@ -41,7 +53,11 @@
     <br>
     <i>-- Time Magazine</i>
     <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank"><i>The Famous people</i></a>
-    <h2><b>Resources</b></h2>
+
+    </section>
+
+    <section>
+        <h2 id="res"><b>Resources</b></h2>
     <p>Learn more about Linus Torvalds and his work:</p>
     <ul>
         <li>
@@ -53,6 +69,10 @@
     <li>
     <a href="https://www.kernel.org/" target="_blank">The Linux Kernel Archives</a></li>
 </ul>
+
+    </section>
+    
+    
 
 </body>
 </html>
