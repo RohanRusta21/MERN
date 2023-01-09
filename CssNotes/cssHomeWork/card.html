@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View</title>
+    <style>
+        #card{
+            width: 30%;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        img{
+            width: 400px;
+            border-radius: 10px;          
+        }
+        #line{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;           
+        }
+        hr{
+            width: 300px;
+            float: left;
+        }
+        #current_price{
+            color: 	#989898;
+            margin-right: 10px;
+        }
+        #original_price{
+            color: 	#606060;
+            margin-right: 10px;
+        }
+        #discount{
+            background-color: #1be39a;
+            border-color: #1be39a;
+            border-radius: 4px;
+            padding: 3px;
+            color: white;          
+        }
+        .second_div{
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div id="image">
+            <img src="lb.jpg" alt="Bootcamp image">
+        </div>
+     
+        <h2 id="line"><b>Web Developmnent Master Course @dot Batch</b></h2>
+     
+        <hr>
+        <br>
+       <div class="second_div">
+        
+        <span id="current_price">&#8377;4500</span>
+        <span id="original_price">&#8377;<del>6999</del></span>
+        <!-- <div id="discount">42% off</div> -->
+        <!-- <button id="discount">42% off</button> -->
+        <span id="discount">42% off</span>
+       </div>
+       
+    </div>
+</body>
+</html>
