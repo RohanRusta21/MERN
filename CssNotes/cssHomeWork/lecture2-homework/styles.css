@@ -1,0 +1,35 @@
+
+.wrapper{
+    width: 300px;
+    height: 200px;
+    background-color: chartreuse;
+    border:1px solid black;
+}
+.center{
+    position: relative;
+    top:70px;
+    text-align: center;
+
+}
+.bottom-right{
+   
+    display: inline;
+    position: relative;
+    left: 260px;
+}
+.left-top{
+    position: relative;
+    left: 6px;
+   
+}
+.bottom-left{
+    position: relative;
+    top:140px;
+    left: 6px;
+}
+.right-top{
+    display: inline;
+    position: relative;
+    left:260px;
+    
+}

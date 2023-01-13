@@ -1,0 +1,35 @@
+.box{
+    background-color: chartreuse;
+    /* moving the object horizontal and vertical   */
+     /* transform: translate(100px,100px); */
+     /* horizontal spacing */
+     /* transform: translateX(100px); */
+     /* vertical spacing */
+     /* transform: translateY(100px); */
+     width: 50px;
+
+
+     /* Rotation */
+     /* transform: rotate(-45deg); */
+     margin: 200px;
+
+     /* Scaling */
+     /* horizontal and vertical */
+     /* decimal value works properly */
+     /* negative values in first value makes the text ulta   */
+     /* transform: scale(-4, 10); */
+     /* transform: scale(4, -10); */
+     transform: scale(4, 5);
+     /* transform: scaleX(2);
+     transform: scaleY(10); */
+
+     /* Skew  in degree  tilting*/
+     transform: skew(45deg);
+     transform: skew(-45deg);
+     
+
+     /* matrix() */
+     transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+
+}
