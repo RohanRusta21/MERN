@@ -1,0 +1,61 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* Linear gradient  */
+    /* by default it is top to bottom */
+    background-image: linear-gradient(red, green);
+    /* bottom to top  */
+    background-image: linear-gradient(to top,yellow, orange);
+    /* left to right */
+    background-image: linear-gradient(to right,yellow, orange);
+        /* right to left */
+    background-image: linear-gradient(to left,yellow, orange);
+        /* bottom left to top right */
+    background-image: linear-gradient(to top right,yellow, rgb(255, 0, 217));
+    /* top left to bottom right */
+    background-image: linear-gradient(to bottom right,yellow, rgb(34, 0, 255));
+    /* using angles */
+    background-image: linear-gradient(45deg, red, yellow);
+    /* using transperency */
+    background-image: linear-gradient(rgba(255,0,0,0.2),rgba(0,0,255,1));   
+     /*repeat linear gradient  */
+     background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+.radial{
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: radial-gradient(#42f575,#f54278);
+    /* define the shapes */
+    background-image: radial-gradient(rectangle,red, yellow,pink);
+    /* percentage of color */
+    background-image: radial-gradient(yellow 25%, blue 25%, orange 50%);
+    /* repeat radial gradient */
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+.conic{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: conic-gradient(red, yellow, green);
+    /* with five colors */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    /* with degree */
+    background-image: conic-gradient(orange 45deg, #00ffd5 210deg, rgb(97, 40, 68) 90deg);
+    /* create pie chart add border-radius */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    /* border-radius: 50%; */
+    /* specific center positon */
+    background-image: conic-gradient(at 60% 45%, red, yellow, green);
+    /* repeat conic gradient */
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    /* border-radius: 50%; */
+    /*  with defined color-starts and color-stops: */
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    /* for making it circle */
+     border-radius: 50%;
+ 
+}
