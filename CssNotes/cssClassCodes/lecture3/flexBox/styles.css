@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    
+    /* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse; */
+    /* for width intact use flex wrap property */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap-reverse; */
+    /* shorthand */
+    /* flex-flow: column wrap; */
+    /* justify-content: flex-start; */
+    justify-content: center;
+    /* justify-content: flex-end; */
+    /* space aroun ----first item left and last item right space is not equal as like in between */
+    /* justify-content: space-around; */
+    /* space between --- moves the first and last item to the corners and provide the equal space between the flex items */
+    /* justify-content: space-between; */
+    /* space evenly ---- provide the space evenly around the each flex items */
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    align-items: center;
+    /* by default */
+    /* align-items: stretch; */
+    /* align the item in single line */
+    /* align-items: baseline; */
+    /* gap after b1 b2 b3 b4 before b4 */
+    /* gap: 10px; */
+    /* row-gap: 10px;
+    column-gap: 10px; */
+     align-content:flex-start ;
+    /*
+    align-content: flex-end;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly; */
+    /* align-content: center; */
+    
+}
+.box{
+    border: 1px solid brown;
+    background-color: chartreuse;
+    width: 150px;
+    /* flex-basis:100px; */
+    /* percentage */
+    flex-basis: 50%;
+    
+
+   
+   
+}
+#box1{
+    order: 1;
+    /* flex-grow: 1; */
+    /* flex-shrink: 4; */
+    /* remove the wrap  */
+    /* align-self: flex-start; */
+}
+#box3{
+    order: 3;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    /*  remove the wrap  */ 
+    /* align-self: flex-end; */
+}
+#box2{
+    order: 2;
+    /* align-self: stretch; */
+}
