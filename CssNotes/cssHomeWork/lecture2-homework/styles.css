@@ -1,11 +1,42 @@
 
 .wrapper{
-    width: 300px;
+    /* width: 300px;
     height: 200px;
     background-color: chartreuse;
-    border:1px solid black;
+    border:1px solid black; */
+    width: 400px;
+    border: 1px solid black;
+    height: 300px;
+    position: relative;
+}
+.top-left{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.top-right{
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 .center{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    /* width work kr rha hai parent ka width k hisab se */
+    text-align: center;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 10px;
+    left:15px;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+/* .center{
     position: relative;
     top:70px;
     text-align: center;
@@ -26,10 +57,10 @@
     position: relative;
     top:140px;
     left: 6px;
-}
-.right-top{
+} */
+/* .right-top{
     display: inline;
     position: relative;
     left:260px;
     
-}
+} */
