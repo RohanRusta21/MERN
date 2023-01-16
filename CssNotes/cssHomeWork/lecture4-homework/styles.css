@@ -1,0 +1,149 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.container{
+   height: 50%;
+   
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    
+}
+#box1, #box2{
+    border: 1px solid black;
+}
+.cart{
+    background-color: blue;
+}
+.box{
+    overflow: hidden;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.container {
+  font-family: "Montserrat", serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f2ebe3;
+}
+.card-box {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  margin: 60px 40px;
+  /* padding: 20px; */
+  flex-direction: row;
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  background-color: #fff;
+}
+.card-img {
+  width: 50%;
+  height: 100%;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.5rem 2rem;
+  font-size: 1rem;
+  gap: 15px;
+}
+.product {
+  color: #6c7289;
+  letter-spacing: 3px;
+  
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fraunces/v26/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7iQcIfJD58njU0oc7qv8.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.title {
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 900;
+  width: 70%;
+}
+.desc {
+  color: #6c7289;
+  font-size: 1.07;
+}
+.cur_price {
+  font-size: 35px;
+  font-family: "Fraunces";
+
+  font-weight: bold;
+  color: rgb(60, 128, 103);
+  margin-right: 5px;
+}
+.del_price {
+  opacity: 0.7;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 15px;
+  /* margin-bottom: 60px; */
+  font-family: "Montserrat";
+  font-size: large;
+  width: 100%;
+  border: none;
+  background-color: rgb(60, 128, 103);
+  color: #fff;
+  padding: 13px;
+  border-radius: 10px;
+}
+button img {
+  margin-right: 10px;
+}
