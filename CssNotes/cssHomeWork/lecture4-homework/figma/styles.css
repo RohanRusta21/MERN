@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  width: 1440px;
+  height: 1461px;
+  border: 1px solid black;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.logo {
+  position: absolute;
+  width: 98px;
+  height: 82px;
+  left: 117px;
+  top: 53px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+li a {
+  text-decoration: none;
+  color: #777c85;
+}
+.list {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+.team {
+  position: absolute;
+  width: 51px;
+  height: 20px;
+  left: 485px;
+  top: 74px;
+  /* color:#4E5DC0; */
+}
+.about {
+  position: absolute;
+  width: 79px;
+  height: 20px;
+  left: 608px;
+  top: 74px;
+}
+.courses {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  left: 754px;
+  top: 74px;
+}
+.contact {
+  position: absolute;
+  width: 68px;
+  height: 20px;
+  left: 898px;
+  top: 74px;
+}
+button {
+  position: absolute;
+  width: 165px;
+  height: 54px;
+  left: 1150px;
+  top: 68px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  background: #4e5dc0;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+section{
+  position: relative;
+  top: 266px;
+  left: 117px;
+}

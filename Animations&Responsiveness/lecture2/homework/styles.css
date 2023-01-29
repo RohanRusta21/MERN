@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-pink{
+    /* border: 1px solid black; */
+    /* width: 132px;
+    height: 47px; */
+    /* width: fit-content; */
+    padding: 0.8rem 2.3rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    background-color: #e84949;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    
+    position: relative;
+    z-index: 1;
+}
+.btn-pink::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+    z-index: -1;
+}
+.btn-pink:hover::before{
+    transform: scaleX(1);
+}
+
+ /* transition:background-color 1s ease 1s ; */
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* animation-name: mansi;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 0.1ms;
+    animation-direction: normal;
+    animation-fill-mode: forwards; */
+    /* transition: all 0.5s; */
+/*
+.box:hover{
+    transform: translateX(100%);
+    background-color: black;
+} */
+/* @keyframes mansi{
+    from{
+        width: 0;
+        background-color: black;
+    }
+    to{
+        width: 100%;
+        background-color: black;
+    }
+} */

@@ -1,0 +1,23 @@
+/* global variables */
+/* :root{
+    --dark-color:#f31212;
+} */
+*{
+    --dark-yellow:#edd51f;
+}
+.container{
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    /* --dark-color:#f31212; */
+    background-color: var(--dark-yellow);
+}
+.box{
+    border: 1px solid blue;
+    background-color: #7fff00;
+    /* variables in color */
+    /* local variables */
+    --dark-color:#f31212;
+    color: var(--dark-color);
+    height: 100px;
+}
