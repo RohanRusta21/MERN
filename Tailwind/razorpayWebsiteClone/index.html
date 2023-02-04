@@ -24,6 +24,10 @@
           padding-bottom: 12rem;
       }
 
+      .ctaSection{
+          background-size: 100% 100%;
+        }
+
       .companiesList{
           animation:10s infinite linear moveCompany;
         }
@@ -41,6 +45,29 @@
 </head>
 <body>
     <div class="overflow-x-hidden relative">
+      
+      <div class="w-full h-[52px] bg-white relative">
+        <div class="w-0 h-0 absolute top-0 bottom-0 left-0 border-b-[52px] border-b-lightBlue border-r-[40px] border-r-transparent z-[14]"></div>
+        <div class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute left-5 z-[12]"></div>
+        <div class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] left-4 lg:left-6"></div>
+        <div class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] left-[4rem] lg:left-[9rem]"></div>
+        <div class="absolute top-1/2 left-1/2 z-[1000] w-full -translate-x-1/2 -translate-y-1/2 flex justify-center items-center space-x-4">
+          <p class="hidden lg:block font-mullish">
+            RazorpayX Payroll: 3 Clicks, Payroll Fixed! Automate payroll now!
+          </p>
+          <p class="block lg:hidden font-mullish text-xs md:text-[14px]">
+            Automate Payroll in just 3 clicks now!
+          </p>
+          <button class="py-[10px] px-4 bg-lightBlue text-white font-mullish font-bold text-xs rounded-md">
+            Know More
+          </button>
+        </div>
+        <div class="w-[140px] h-[52px] bg-[#F3F8FE] skew-x-[38deg] absolute z-[12] right-[4rem] lg:right-[9rem]"></div>
+        <div class="w-[120px] h-[52px] bg-[#E7F1FD] skew-x-[38deg] absolute z-[10] right-4 lg:right-6"></div>
+        <div class="hidden lg:block w-2 h-[52px] bg-[#C4DDF9] skew-x-[38deg] absolute right-5 z-[12]"></div>
+        <div class="w-0 h-0 absolute top-0 bottom-0 right-0 border-t-[52px] border-t-lightBlue border-l-[40px] border-l-transparent z-[14]"></div>
+      </div>
+
       <!-- navbar -->
     <nav class="bg-deepBlue ">
       <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
@@ -1311,7 +1338,76 @@
      </div>
   </section>
 
+  <!-- CTA -->
+  <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]">
+    <!-- container -->
+    <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-16">
+      <!-- left part -->
+      <div class="flex flex-col gap-5 mt-12 max-w-[600px]">
+        <!-- heading 2 -->
+        <h2 class="font-mullish font-bold text-2xl text-white">         
+        Supercharge your business with Razorpay
+        </h2>
+        <!-- underline -->
+        <div class="w-6 h-1 bg-greenLight"></div>
+        <!-- text -->
+        <p class="font-mullish text-white">
+          Sign up now to experience the future of payments and offer your customers the best checkout experience.
+        </p>
+        <!-- list -->
+        <ul class="flex flex-row flex-wrap gap-x-11 text-white gap-y-3">
+          <li class="font-mullish text-white flex flex-row ">
+            <i data-feather="check" class="text-greenLight"></i>
+            <span>
+              Quick Onboarding
+            </span>
+          </li>
+          <li class="font-mullish text-white flex flex-row ">
+            <i data-feather="check" class="text-greenLight"></i>
+            <span>
+              Access to entire product suite
+            </span>
+          </li>
+          <li class="font-mullish text-white flex flex-row ">
+            <i data-feather="check" class="text-greenLight"></i>
+            <span>
+              API access
+            </span>
+          </li>
+          <li class="font-mullish text-white flex flex-row ">
+            <i data-feather="check" class="text-greenLight"></i>
+            <span>
+              24x7 support
+            </span>
+          </li>
+        </ul>
+        <!-- button -->       
+        <button
+        class="min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex
+        rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start">
+          Sign Up
+          <svg
+          viewBox="0 0 24 24"
+          focusable="false"
+          class="w-[14px] h-[14px] ml-3"
+        >
+          <path
+            fill="currentColor"
+            d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+          ></path>
+        </svg>
+        </button>
+        
+      </div>
+      
+      <!-- right part -->
+      <img src="./images/ctaImg.svg" alt=""
+      loading="lazy"
+      width="240px" height="282px" class="mt-16 pt-3">     
     </div>
+  </section>
+
+  </div>
 
    
 
