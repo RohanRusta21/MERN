@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal App</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.avif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="wrapper1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <!-- profile wrapper -->
+        <div class="profile-wrapper">
+            <!-- image -->
+            <div class="userImage">
+                <img src="./assets/Mansi Sinha Photo.jpeg" alt="" width="175px" height="175px">
+            </div>
+            <!-- username -->
+            <div class="userName">
+                <h1>Mansi Sinha</h1>
+            </div>
+            <!-- description -->
+            <div class="userDesc">
+                <h3>Website Developer</h3>
+            </div>
+            <!-- buttons -->
+            <div class="buttons bottom-group">
+                <button onclick="openModal()" class="btn-share btn">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button class="btn-follow btn">Follow me</button>
+            </div>
+        </div>
+
+        <!-- modal component -->
+        <div class="modal">
+            <div class="modal-header">
+                <h1>Share my Profile</h1>
+                <div>
+                    <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+                </div>
+            </div>
+
+            <div class="share">
+                <h3>Share this via</h3>
+
+                <div class="icon-container">
+                    <a href="#" class="icon" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+          <!-- Overlay -->
+         <div class="overlay" onclick="closeModal()"></div>
+
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
